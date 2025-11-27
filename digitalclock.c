@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <windows.h>
-#include <conio.h>   // _kbhit, _getch
-#include <ctype.h>   // tolower
+#include <conio.h>   
+#include <ctype.h>   
 
 int main(void) {
 
@@ -25,7 +25,7 @@ int main(void) {
 
         // Bir sonraki saniye sınırına kadar bekle
         DWORD ms = (st.wMilliseconds >= 1000) ? 0 : (1000 - st.wMilliseconds);
-        Sleep(ms ? ms : 1); // 0 verirsen bazen beklemeyebilir; 1ms güvenli
+        Sleep(ms ? ms : 1);
     }
     return 0;
 }
